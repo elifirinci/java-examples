@@ -25,6 +25,7 @@ public class StringExercise{
         System.out.println("Sentence1+sentence2: "+sentence.concat(sentence2))
         System.out.println("Sentence1=?sentence2: "+sentence.equals(sentence2));;
 
+        scanner.close();
 
 
 

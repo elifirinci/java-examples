@@ -7,7 +7,7 @@ public class FileHandling2 {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         try{
-            File file=new File("C:/Users/ELİF/OneDrive/Masaüstü/filee.txt");
+            File file=new File("file.txt");
             if(file.createNewFile()){
                 System.out.println("File created");
             }

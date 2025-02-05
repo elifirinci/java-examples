@@ -2,7 +2,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.Scanner;
-public class MidtermDeneme3 {
+public class FileHandling {
     public static void main(String args[]){
         Scanner scanner=new Scanner(System.in);
         try{

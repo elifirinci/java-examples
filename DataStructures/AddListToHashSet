@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class Main{
+	public static void addListToHashSet(List<Integer>list, Set<Integer> hash){
+		Iterator<Integer> itr=list.iterator();
+		while(itr.hasNext()){
+			hash.add(itr.next());
+		}
+		
+	}
+	public static void main(String[] args){
+		ArrayList<Integer> arraylist=new ArrayList<>();
+		Random random=new Random();
+		for(int i=0;i<10;i++){
+			int data=random.nextInt(90)+10;
+			arraylist.add(data);
+		}
+		arraylist.set(2,7);
+		System.out.println("3.indisi:" + arraylist.get(3));
+		System.out.println("ArrayList: "+ arraylist);
+		Collections.sort(arraylist);
+		System.out.println("Sorted: "+ arraylist);
+		
+		int sum=0;
+		for(int num:arraylist){
+			sum+=num;
+		}
+		System.out.println("Sum: "+sum);
+		System.out.println("Average: "+ (double)sum/arraylist.size());
+		
+		HashSet<Integer> hash=new HashSet<>();
+		addListToHashSet(arraylist,hash);
+		System.out.println("HashSet: "+hash);
+	}
+}

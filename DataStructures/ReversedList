@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main{
+    public static void ReversedList(List<String> list){
+        ListIterator<String> itr=list.listIterator(list.size());//list.size() listenin sonundan başlamak için kullanılır
+        while(itr.hasPrevious()){
+            System.out.printf("%s",itr.previous());
+
+        }
+    }
+    public static void main(String[] args){
+        String[] colors={"black", "yellow", "green", "blue", "violet", "silver"};
+        LinkedList<String> list1=new LinkedList<>();
+        for(String color:colors){
+            list1.add(color);
+        }
+        ReversedList(list1);
+        
+
+    }  
+}
+    

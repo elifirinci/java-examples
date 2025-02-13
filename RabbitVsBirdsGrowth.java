@@ -1,4 +1,4 @@
-public class EightQuestion {
+public class RabbitVsBirdsGrowth {
     public static void main(String[] args){
         int numbersOfRabbits = 1042;
         int numbersOfBirds = 2272;

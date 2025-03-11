@@ -11,8 +11,6 @@ public class InheritanceMain {
         System.out.println("Akademisyene ait bilgiler");
         akademisyen.bilgilerigoster();
         System.out.println(akademisyen.girisSayısı()+" çalışan giriş yaptı");
-
-
     }
     
 }

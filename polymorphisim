@@ -1,0 +1,34 @@
+// Ana Hayvan sınıfı
+class Hayvan {
+    public void sesCikar() {
+        System.out.println("Hayvan sesi");
+    }
+}
+
+// Hayvan sınıfından türeyen Köpek sınıfı
+class Kopek extends Hayvan {
+    @Override
+    public void sesCikar() {
+        System.out.println("Hav hav!");
+    }
+}
+
+// Hayvan sınıfından türeyen Kedi sınıfı
+class Kedi extends Hayvan {
+    @Override
+    public void sesCikar() {
+        System.out.println("Miyav!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Polimorfizm örneği
+        Hayvan hayvan1 = new Kopek();
+        Hayvan hayvan2 = new Kedi();
+
+        // Her iki nesne de aynı metodu çağırır, ancak farklı davranışlar sergiler.
+        hayvan1.sesCikar(); // "Hav hav!" çıktısını verir
+        hayvan2.sesCikar(); // "Miyav!" çıktısını verir
+    }
+}
